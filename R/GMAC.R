@@ -35,9 +35,9 @@
 #' @importFrom graphics par plot
 #' @examples data(example)
 #'
-#' # a fast example with only 100 permutations
+#' # a fast example with only 50 permutations
 #' output <- gmac(known.conf=dat$known.conf, cov.pool=dat$cov.pool, exp.dat=dat$exp.dat, snp.dat.cis=dat$snp.dat.cis, 
-#'                    trios.idx=dat$trios.idx[1:40,], nperm=100, nominal.p=TRUE)
+#'                    trios.idx=dat$trios.idx, nperm=50, nominal.p=TRUE)
 #'
 #' plot(output)
 #'
