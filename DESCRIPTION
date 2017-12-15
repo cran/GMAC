@@ -1,8 +1,8 @@
 Package: GMAC
 Type: Package
 Title: Genomic Mediation Analysis with Adaptive Confounding Adjustment
-Version: 2.0
-Date: 2017-10-30
+Version: 3.0
+Date: 2017-12-14
 Author: Fan Yang, Jiebiao Wang and Lin Chen
 Maintainer: Fan Yang <yfcarolyn@gmail.com>
 Description: Performs genomic mediation
@@ -16,10 +16,10 @@ Description: Performs genomic mediation
     cis-association (i.e., treatment-mediator association) and random eQTL (i.e.,
     treatment).
 License: GPL
-Depends: parallel, qvalue
+Depends: parallel
 LazyData: TRUE
 NeedsCompilation: no
 Repository: CRAN
 RoxygenNote: 6.0.1
-Packaged: 2017-10-30 23:58:40 UTC; rande
-Date/Publication: 2017-10-31 22:54:36 UTC
+Packaged: 2017-12-15 15:32:59 UTC; rande
+Date/Publication: 2017-12-15 17:45:23 UTC

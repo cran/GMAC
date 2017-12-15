@@ -54,8 +54,8 @@ data(example)
 
 # a fast example with only 50 permutations
 output <- gmac(known.conf = dat$known.conf, cov.pool = dat$cov.pool, 
-    exp.dat = dat$exp.dat, snp.dat.cis = dat$snp.dat.cis, trios.idx = dat$trios.idx, 
-    nperm = 50, nominal.p = TRUE)
+    exp.dat = dat$exp.dat, snp.dat.cis = dat$snp.dat.cis, 
+    trios.idx = dat$trios.idx[1:40, ], nperm = 50, nominal.p = TRUE)
 
 plot(output)
 
@@ -69,11 +69,13 @@ cov.pool <- t(pc$x)
 ## generate a cluster with 2 nodes for parallel computing
 cl <- makeCluster(2)
 output <- gmac(cl = cl, known.conf = dat$known.conf, cov.pool = cov.pool, 
-    exp.dat = dat$exp.dat, snp.dat.cis = dat$snp.dat.cis, trios.idx = dat$trios.idx, 
-    nominal.p = TRUE)
+    exp.dat = dat$exp.dat, snp.dat.cis = dat$snp.dat.cis, 
+    trios.idx = dat$trios.idx, nominal.p = TRUE)
 stopCluster(cl)
 }
 }
 \references{
-Fan Yang, Jiebiao Wang, the GTEx consortium, Brandon L. Pierce, and Lin S. Chen. Identifying cis-mediators for trans-eQTLs across many human tissues using genomic mediation analysis. Genome Research. (Pending acceptance). \doi{10.1101/078683}
+Fan Yang, Jiebiao Wang, the GTEx consortium, Brandon L. Pierce, and Lin S. Chen. (2017) Identifying cis-mediators for trans-eQTLs across many human tissues using genomic mediation analysis. Genome Research. Volume 27, pp. 1859-1871. \doi{10.1101/078683}
+
+John D. Storey with contributions from Andrew J. Bass, Alan Dabney and David Robinson (2015). qvalue: Q-value estimation for false discovery rate control. R package version 2.8.0. \doi{10.18129/B9.bioc.qvalue}
 }
