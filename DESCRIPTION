@@ -1,10 +1,10 @@
 Package: GMAC
 Type: Package
 Title: Genomic Mediation Analysis with Adaptive Confounding Adjustment
-Version: 3.0
-Date: 2017-12-14
+Version: 3.1
+Date: 2022-3-16
 Author: Fan Yang, Jiebiao Wang and Lin Chen
-Maintainer: Fan Yang <yfcarolyn@gmail.com>
+Maintainer: Jiebiao Wang <randel.wang@gmail.com>
 Description: Performs genomic mediation
     analysis with adaptive confounding adjustment (GMAC) proposed by Yang et al. (2017) <doi:10.1101/078683>. It implements large scale
     mediation analysis and adaptively selects potential confounding variables to
@@ -20,6 +20,6 @@ Depends: parallel
 LazyData: TRUE
 NeedsCompilation: no
 Repository: CRAN
-RoxygenNote: 6.0.1
-Packaged: 2017-12-15 15:32:59 UTC; rande
-Date/Publication: 2017-12-15 17:45:23 UTC
+RoxygenNote: 7.1.2
+Packaged: 2022-03-16 19:50:27 UTC; rande
+Date/Publication: 2022-03-17 08:30:18 UTC
